@@ -1,83 +1,109 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <title>"Centro de Adopciones San Martín de Porres"</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Adopciones San Martín de Porres</title>
 
-    <style>
-        body{
-            background-color: #54bedf;
-            font-family: Arial, sans-serif;
-        }
-
-        h1{
-            color: rgb(10, 2, 121);
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-<header>
-    <h1 style="text-align: center;">Centro de Adopciones San Martín de Porres</h1>
-    <h2>Mauricio Gustavo Aparicio Muñoz</h2>
-</header>
-<nav>
-    <h2>Menu</h2>
-    <ul>
-        <a href="">
-            <li>Adopción de mascotas</li>
-            <li>Información sobre cuidados basicos</li>
-            <li>Orientación para nuevos adoptantes</li>
-            <li>Contacto con el refugio</li>
-        </a>
-    </ul>
-</nav>
-<main>
 
-    <section>
-        <h2>Descripción del proyecto</h2>
+    <header>
+        <h1>Centro de Adopciones San Martín de Porres</h1>
+        <p>Adopta hoy, ama para siempre</p>
+    </header>
 
-        <p>
-            Este proyecto tiene como objetivo desarrollar una página web para el
-            Centro de Adopciones San Martín de Porres. En ella se mostrará
-            información sobre el refugio, las mascotas disponibles para adopción,
-            los requisitos para adoptar y los datos de contacto para las personas
-            interesadas en brindar un hogar a un animal.
-        </p>
-    </section>
+    <div class="contenedor">
 
-    <section>
-        <h2>Imagenes de mascotas en adopción</h2>
+        <nav>
+            <a href="#">🏠 Inicio</a>
+            <a href="#">🐶 Mascotas</a>
+            <a href="#">❤️ Adopciones</a>
+            <a href="#">📞 Contacto</a>
+        </nav>
 
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Jornada_de_adopcion_de_animales_de_compa%C3%B1ia_en_el_Parque_Rodo_-_20140102dicimouyem0038-2.jpg/960px-Jornada_de_adopcion_de_animales_de_compa%C3%B1ia_en_el_Parque_Rodo_-_20140102dicimouyem0038-2.jpg"
-            alt="Jornada de adopción de mascotas"width="300">
-    </section>
+        <main>
 
-    <section>
-        <h2>Misión</h2>
+            <section class="descripcion">
+                <h2>¿Quiénes somos?</h2>
 
-        <p>
-            Nuestra misión es promover la adopción responsable y brindar una
-            segunda oportunidad a perros y gatos que han sido rescatados,
-            ayudándolos a encontrar un hogar seguro y lleno de cariño.
-        </p>
-    </section>
+                <p>
+                    El Centro de Adopciones San Martín de Porres es un refugio
+                    dedicado al cuidado y protección de perros y gatos rescatados.
+                    Nuestro objetivo es brindarles atención mientras encuentran
+                    una familia responsable que les dé un nuevo hogar.
+                </p>
+            </section>
 
-    <section>
-        <h2>Servicios</h2>
-            <li>Rescate</li>
-            <li>Adopción</li>
-            <li>Pet Shop</li>
-        <ul>
-            
-        </ul>
-    </section>
+            <section class="imagen">
+                <h2>Mascotas en adopción</h2>
 
-</main>
-    
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Jornada_de_adopcion_de_animales_de_compa%C3%B1ia_en_el_Parque_Rodo_-_20140102dicimouyem0038-2.jpg/960px-Jornada_de_adopcion_de_animales_de_compa%C3%B1ia_en_el_Parque_Rodo_-_20140102dicimouyem0038-2.jpg"
+                    alt="Mascotas en adopción">
+            </section>
+
+            <section class="mision">
+
+                <h2>Nuestra misión</h2>
+
+                <p>
+                    Promover la adopción responsable, reducir el abandono de
+                    animales y crear conciencia sobre el respeto y bienestar de
+                    las mascotas.
+                </p>
+
+            </section>
+
+            <section class="servicios">
+
+                <h2>Servicios</h2>
+
+                <ul>
+                    <li>Adopción de perros y gatos.</li>
+                    <li>Orientación para nuevos adoptantes.</li>
+                    <li>Información sobre el cuidado de mascotas.</li>
+                    <li>Campañas de concientización.</li>
+                </ul>
+
+            </section>
+
+        <section class="formulario">
+            <h2>Formulario de Solicitud de Adopción</h2>
+            <form>
+                <label for="nombre">Nombre completo</label><br>
+                <input type="text" id="nombre" placeholder="Ingrese su nombre" size="70"><br><br>
+
+                <label for="correo">Correo electrónico</label><br>
+                <input type="email" id="correo" placeholder="ejemplo@correo.com" size="70"><br><br>
+
+                <label for="telefono">Teléfono</label><br>
+                <input type="text" id="telefono" placeholder="Ingrese su teléfono" size="70"><br><br>
+
+                <label for="mascota">Mascota que desea adoptar</label><br>
+                <select id="mascota">
+                    <option>Seleccione una opción</option>
+                    <option>Perro</option>
+                    <option>Gato</option>
+                </select><br><br>
+
+                <label for="motivo">¿Por qué desea adoptar?</label><br>
+                <textarea id="motivo" cols="75" rows="5" placeholder="Escriba brevemente su motivo"></textarea><br><br>
+
+                <input type="submit" value="Enviar solicitud">
+            </form>
+        </section>
+
+        </main>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Centro de Adopciones San Martín de Porres &reg;</p>
+    </footer>
+
 </body>
 
-<footer>
-    <p>&copy; 2026 Centro de Adopciones San Martín de Porres &reg;</p>
-</footer>
 </html>
