@@ -5,112 +5,117 @@
 }
 
 body{
-
     font-family:Arial, Helvetica, sans-serif;
     background:#2489b8;
 }
 
 header{
-
     background:#12445c;
     color:white;
     padding:30px;
     text-align:center;
-
 }
 
 .contenedor{
-
     display:flex;
     min-height:100vh;
-
 }
 
 nav{
-
     width:220px;
     background:#1565c0;
-    padding-top:30px;
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
 }
 
 nav a{
-
-    display:block;
     color:white;
     text-decoration:none;
-    padding:18px;
+    padding:12px;
     font-size:18px;
-
+    border-radius:6px;
 }
 
 nav a:hover{
-
-    background:#0c73b8;
-
+    background:#075583;
 }
 
 main{
-
     flex:1;
     padding:30px;
-
 }
 
 section{
-
     margin-bottom:25px;
     padding:25px;
     border-radius:15px;
     box-shadow:0px 4px 10px gray;
-
 }
 
 .descripcion{
-
     background:#fff8dc;
-
 }
 
 .imagen{
-
-    background:#e1f5fe;
+    background:#4fc0f5;
     text-align:center;
+}
 
+.imagen img{
+    width:80%;
+    max-width:650px;
+    border-radius:10px;
 }
 
 .servicios{
-
     background:#e8f5e9;
-
 }
 .mision{
-
     background:#e8f5e9;
-
 }
 
 .formulario{
-
     background:#fff3e0;
-
 }
 
+section h2{
+    margin-bottom:15px;
+}
+
+section p{
+    line-height:1.5;
+}
+
+ul{
+    margin-left:20px;
+}
+
+li{ 
+    margin-bottom:8px;
+}
 
 label{
-
     margin-top:12px;
     font-weight:bold;
 }
 
 input,
 select,
+input,
+select,
 textarea{
-
-    margin-top:5px;
+    width:100%;
     padding:10px;
+    margin-top:5px;
     border-radius:8px;
     border:1px solid gray;
+    box-sizing:border-box;
+}
 
+textarea{
+    resize:vertical;
 }
 
 input[type="submit"]{
@@ -124,16 +129,36 @@ input[type="submit"]{
 }
 
 input[type="submit"]:hover{
-
     background:#2e7d32;
-
 }
 
 footer{
-
     background:#263238;
     color:white;
     text-align:center;
     padding:18px;
+}
 
+@media screen and (max-width:768px){
+    .contenedor{
+        flex-direction:column;
+    }
+
+    nav{
+        width:100%;
+        gap:8px;
+    }
+
+    main{
+        padding:15px;
+    }
+
+    section{
+        padding:18px;
+        margin-bottom:15px;
+    }
+
+    .imagen img{
+        width:100%;
+    }
 }
