@@ -16,6 +16,14 @@ header{
     text-align:center;
 }
 
+.boton-modo{
+    margin-top: 14px;
+    background-color: #2e7d32;
+    color: black;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .contenedor{
     display:flex;
     min-height:100vh;
@@ -139,6 +147,40 @@ footer{
     padding:18px;
 }
 
+body.claro{
+    background-color: #4fc0f5;
+    color: black;
+}
+
+body.claro header{
+    background-color: #4fc0f5;
+    color: black;
+}
+
+body.claro header p{
+    color: darkblue;
+}
+
+body.claro nav{
+    background-color: #263238;
+}
+
+body.claro .tarjeta{
+    background-color: aqua;
+}
+
+body.claro .tarjeta h2{
+    color: black;
+}
+
+body.claro article{
+    background-color: #2489b8;
+}
+
+body.claro article h3{
+    background-color: #2489b8;
+}
+
 @media screen and (max-width:768px){
     .contenedor{
         flex-direction:column;
@@ -146,6 +188,7 @@ footer{
 
     nav{
         width:100%;
+        flex-direction:column;
         gap:8px;
     }
 
