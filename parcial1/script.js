@@ -1,7 +1,7 @@
 function mostrarMensaje(){
     const mensaje = document.querySelector("#mensaje");
 
-    mensaje.textContent = "Pedido recibido - te ateinde Mauricio Aparicio";
+    mensaje.textContent = "Pedido recibido - te atiende Mauricio Aparicio";
     mensaje.classList.remove("oculto");
 }
 
