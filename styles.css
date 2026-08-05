@@ -140,6 +140,16 @@ input[type="submit"]:hover{
     background:#2e7d32;
 }
 
+.error{
+    color: red;
+    font-weight: bold;
+}
+
+.exito{
+    color: green;
+    font-weight: bold;
+}
+
 footer{
     background:#263238;
     color:white;

@@ -73,18 +73,18 @@
 
         <section class="formulario">
             <h2>Formulario de Solicitud de Adopción</h2>
-            <form>
+            <form id="form-adopcion" novalidate>
                 <label for="nombre">Nombre completo</label><br>
-                <input type="text" id="nombre" placeholder="Ingrese su nombre" size="70"><br><br>
+                <input type="text" id="nombre" placeholder="Ingrese su nombre" size="70" required><br><br>
 
                 <label for="correo">Correo electrónico</label><br>
-                <input type="email" id="correo" placeholder="ejemplo@correo.com" size="70"><br><br>
+                <input type="email" id="correo" placeholder="ejemplo@correo.com" size="70" required><br><br>
 
                 <label for="telefono">Teléfono</label><br>
-                <input type="text" id="telefono" placeholder="Ingrese su teléfono" size="70"><br><br>
+                <input type="text" id="telefono" placeholder="Ingrese su teléfono" size="70" required><br><br>
 
                 <label for="mascota">Mascota que desea adoptar</label><br>
-                <select id="mascota">
+                <select id="mascota" required>
                     <option>Seleccione una opción</option>
                     <option>Perro</option>
                     <option>Gato</option>
@@ -94,6 +94,8 @@
                 <textarea id="motivo" cols="75" rows="5" placeholder="Escriba brevemente su motivo"></textarea><br><br>
 
                 <input type="submit" value="Enviar solicitud">
+
+                <p id="error-pedido" class="aviso"></p>
             </form>
         </section>
 
