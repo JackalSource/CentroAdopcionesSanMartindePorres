@@ -29,37 +29,37 @@ function revisarPedido(event) {
     const motivo = document.querySelector("#motivo").value;
 
     if (nombre == "") {
-        avisoPedido.textContent = "Falta tu nombre.";
+        avisoPedido.textContent = "Falta tu nombre";
         avisoPedido.classList.add("error");
         avisoPedido.classList.remove("exito");
     }
 
     else if (correo.includes("@") == false) {
-        avisoPedido.textContent = "El correo no parece correcto. Le falta el @.";
+        avisoPedido.textContent = "El correo no parece correcto le falta el @";
         avisoPedido.classList.add("error");
         avisoPedido.classList.remove("exito");
     }
 
     else if (telefono == "") {
-        avisoPedido.textContent = "Falta tu teléfono.";
+        avisoPedido.textContent = "Falta tu teléfono";
         avisoPedido.classList.add("error");
         avisoPedido.classList.remove("exito");
     }
 
     else if (mascota == "Seleccione una opción") {
-        avisoPedido.textContent = "Seleccione una mascota.";
+        avisoPedido.textContent = "Seleccione una mascota";
         avisoPedido.classList.add("error");
         avisoPedido.classList.remove("exito");
     }
 
     else if (motivo == "") {
-        avisoPedido.textContent = "Escriba el motivo de la adopción.";
+        avisoPedido.textContent = "Escriba el motivo de la adopción";
         avisoPedido.classList.add("error");
         avisoPedido.classList.remove("exito");
     }
 
     else {
-        avisoPedido.textContent = "Solicitud enviada correctamente. Nos pondremos en contacto contigo.";
+        avisoPedido.textContent = "Solicitud enviada correctamente. Nos pondremos en contacto contigo";
         avisoPedido.classList.add("exito");
         avisoPedido.classList.remove("error");
     }
