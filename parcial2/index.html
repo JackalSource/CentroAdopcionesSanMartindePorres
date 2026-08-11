@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heladeria DOña Nieve</title>
+</head>
+<body>
+    <header>
+        <h1>Heladeria Doña Nieve</h1>
+
+        <p>
+            En Heladeriaa Doña Nieve disfrutamos preparar helados deliciosos para compartir en familia y con amigos
+        </p>
+    </header>
+
+    <main>
+
+        <form id="form-helados" novalidate method="POST" action="procesar.php">
+
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">Correo electronico</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="sabores">Que sabores quieres?</label>
+            <textarea id="sabores" name="sabores"></textarea>
+
+            <button type="submit">Enviar pedido</button>
+
+            <p id="aviso-helados" class="aviso"></p>
+
+        </form>
+
+    </main>
+
+    <footer>
+        Parcial 2 - Mauricio Gustavo Aparicio Muñoz - 111 de agosto de 2026
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
