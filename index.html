@@ -73,25 +73,25 @@
 
         <section class="formulario">
             <h2>Formulario de Solicitud de Adopción</h2>
-            <form id="form-adopcion" novalidate>
+            <form method="POST" action="procesar.php" novalidate>
                 <label for="nombre">Nombre completo</label><br>
-                <input type="text" id="nombre" placeholder="Ingrese su nombre" size="70" required><br><br>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" size="70" required><br><br>
 
                 <label for="correo">Correo electrónico</label><br>
-                <input type="email" id="correo" placeholder="ejemplo@correo.com" size="70" required><br><br>
+                <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" size="70" required><br><br>
 
                 <label for="telefono">Teléfono</label><br>
-                <input type="text" id="telefono" placeholder="Ingrese su teléfono" size="70" required><br><br>
+                <input type="text" id="telefono" name="telefono" placeholder="Ingrese su teléfono" size="70" required><br><br>
 
                 <label for="mascota">Mascota que desea adoptar</label><br>
-                <select id="mascota" required>
+                <select id="mascota" name="mascota" required>
                     <option>Seleccione una opción</option>
                     <option>Perro</option>
                     <option>Gato</option>
                 </select><br><br>
 
                 <label for="motivo">¿Por qué desea adoptar?</label><br>
-                <textarea id="motivo" cols="75" rows="5" placeholder="Escriba brevemente su motivo"></textarea><br><br>
+                <textarea id="motivo" name="motivo" cols="75" rows="5" placeholder="Escriba brevemente su motivo"></textarea><br><br>
 
                 <input type="submit" value="Enviar solicitud">
 
