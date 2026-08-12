@@ -10,7 +10,7 @@ function revisarPedido(event) {
 
         event.preventDefault();
 
-        avisoHelados.textContent = "Falta tu nombre otu correo, debes llenar los campos para realiza pedido";
+        avisoHelados.textContent = "Falta tu nombre o tu correo, debes llenar los campos para realiza pedido";
         avisoHelados.classList.add("error");
         avisoHelados.classList.remove("exito");
 

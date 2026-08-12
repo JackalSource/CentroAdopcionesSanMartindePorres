@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5eee6;
+    color: #333;
+}
+
+header {
+    background-color: #8b5e3c;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+main {
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+}
+
+input,
+textarea {
+    width: 100%;
+    margin: 5px 0 10px;
+}
+
+button {
+    background-color: #8b5e3c;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+}
+
+.aviso {
+    display: none;
+}
+
+.aviso.error {
+    display: block;
+    color: #b00020;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+}

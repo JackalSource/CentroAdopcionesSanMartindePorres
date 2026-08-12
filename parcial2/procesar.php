@@ -22,6 +22,6 @@ foreach ($productos as $producto) {
 
 echo "</ul>";
 
-echo "<p>Te aitende Mauricio Gustavo Aparicio Muñoz</p>";
+echo "<p>Te atiende Mauricio Gustavo Aparicio Muñoz</p>";
 
 ?>
