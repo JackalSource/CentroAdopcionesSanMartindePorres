@@ -22,16 +22,20 @@ Route::get('/libros/nuevo', function () {
 });
 
 Route::post('/libros/nuevo', function () {
-    $datos = request()->validate([
+
+    request()->validate([
         'titulo' => 'required',
         'precio' => 'required|integer'
     ], [
-        'titulo.required' => 'Falta el titulo del lbro',
-        'precio.required' => 'Falta el precio del libro',
-        'precio.integer' => 'Ese precio no es entero'
+        'titulo.required' => 'Falta el título del libro.',
+        'precio.required' => 'Falta el precio del libro.',
+        'precio.integer' => 'Ese precio no es un número entero.'
     ]);
 
-    Libro::create($datos);
+    Libro::create([
+        'titulo' => request()->input('titulo'),
+        'precio' => request()->input('precio')
+    ]);
 
     return redirect('/libros');
 });
